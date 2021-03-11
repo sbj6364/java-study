@@ -1,8 +1,8 @@
 # JAVA-study
-Basic Java Comprehension
+Study note for basic JAVA comprehension
 
 ### String
-~~~
+~~~java
 String st = "";
 String st = new String(""); # use 'new' to make an object
 ~~~
@@ -23,7 +23,7 @@ String st = new String(""); # use 'new' to make an object
 - `sb.substring(i,j)`: Extract a particular part(i <= index < j) of the String Buffer(sb)
 
 ### Array
-~~~
+~~~java
 type[] a = {};
 type[] a = new type[n]; # 'n' is the length of the array
 ~~~
@@ -35,7 +35,7 @@ type[] a = new type[n]; # 'n' is the length of the array
 
 Similar with Array, but more dynamic.  
 **Array List**: The simplest type of list
-~~~
+~~~java
 ArrayList<type> al = new ArrayList();
 ~~~
 - `al.add(i,object)`: Add object in certain position(i)
@@ -44,3 +44,29 @@ ArrayList<type> al = new ArrayList();
 - `al.contains(object)`: Check if the object is included in the Array List, return boolean value
 - `al.remove(object)`: Find and remove the object from the Array List, return boolean value
 - `al.remove(index)`: Remove the object of certain index, return the object
+
+### Generics
+~~~java
+ArrayList<Type> alist = new ArrayList<Type>();
+~~~
+Use generics to check specific type  
+  
+**Non-generics code**
+~~~java
+ArrayList aList = new ArrayList();
+aList.add("hello");
+aList.add("java");
+
+String hello = (String) aList.get(0); // Casting object into string
+String java = (String) aList.get(1);
+~~~
+  
+**Generics code**
+~~~java
+ArrayList<String> aList = new ArrayList<String>();
+aList.add("hello");
+aList.add("java");
+
+String hello = aList.get(0); // No need to change type
+String java = aList.get(1);
+~~~
