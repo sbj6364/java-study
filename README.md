@@ -2,9 +2,27 @@
 Basic Java Comprehension
 
 ### String
-- equals: 값 동일 여부 비교
-- indexOf: 특정 문자 시작 인덱스 출력
-- replaceAll: 특정 문자를 다른 문자로 변경
-- substring: 문자열 중 특정 부분 추출
-- toUpperCase: 문자열을 모두 대문자로 변경
-- toLowerCase: 문자열을 모두 소문자로 변경
+~~~
+String var = "";
+~~~
+
+- `a.equals(b)`: Compare whether string a, b are the same
+- `a.indexOf(b)`: Extracts the starting index of a particular part(b)
+- `a.replaceAll(b,c)`: Replace certain parts(b) of the string(a) with other characters(c)
+- `a.substring(i,j)`: Extract a particular part(i <= index < j) of a string(a)
+- `a.toUpperCase()`: Replace all string letters to uppercase
+- `a.toLowerCase()`: Replace all string letters to lowercase
+
+### StringBuffer
+- `toString()`: Change into string type
+	- String (immutable)
+	- StringBuffer (mutable): Heavier than string
+- `append`: Add string
+- `insert`: Insert string into certain index
+- `substring`: Extract a particular part of a string
+
+### Array
+~~~
+type[] var = {}
+~~~
+- indexing by `var[index]`
