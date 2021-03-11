@@ -33,6 +33,7 @@ type[] a = new type[n]; # 'n' is the length of the array
 
 ### List
 
+Similar with Array, but more dynamic.  
 **Array List**: The simplest type of list
 ~~~
 ArrayList<type> al = new ArrayList();
