@@ -303,5 +303,12 @@ for (initial value; condition; increasing value)
   }
   ~~~
 
-  
+- For each
 
+  ~~~java
+  for (type var: iterate) {
+      body-of-loop
+  }
+  ~~~
+
+  Simple, but cannot specify the number of iterations or the increasing value.
