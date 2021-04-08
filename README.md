@@ -312,9 +312,3 @@ for (initial value; condition; increasing value)
   ~~~
 
   Simple, but cannot specify the number of iterations or the increasing value.
-
-
-
-
-
-week 2
